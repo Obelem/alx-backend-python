@@ -1,0 +1,33 @@
+#!/usr/bin/bash
+
+# usage: Execute script from project directory
+# -> ../createTestFiles
+
+# This script creates the test files and adds them to the .gitignore in the repo root
+# Feel free to add and comment out files you don't need
+
+touch 0-main.py
+touch 1-main.py
+touch 2-main.py
+touch 3-main.py
+touch 4-main.py
+touch 5-main.py
+touch 6-main.py
+touch 7-main.py
+touch 8-main.py
+touch 9-main.py
+# touch 10-main.py
+# touch 11-main.py
+# touch 12-main.py
+# touch 13-main.py
+touch 100-main.py
+touch 101-main.py
+touch 102-main.py
+# touch 103-main.py
+
+# make files executable
+chmod +x *-main.py
+
+# ignore test files
+echo -e "\n#ignore test files" >>../.gitignore
+echo "*-main.py" >>../.gitignore
