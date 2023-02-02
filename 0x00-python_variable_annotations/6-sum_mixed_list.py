@@ -11,4 +11,4 @@ def sum_mixed_list(mxd_lst: List[int, float]) -> float:
     List -- list with complex types of int and float
     Return: sum of list elements as float
     """
-    return sum(mixd_list)
+    return sum(mxd_lst)
