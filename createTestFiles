@@ -29,5 +29,5 @@ touch 102-main.py
 chmod +x *-main.py
 
 # ignore test files
-echo -e "\n#ignore test files" >>../.gitignore
+echo -e "\n# ignore test files" >>../.gitignore
 echo "*-main.py" >>../.gitignore
