@@ -4,13 +4,13 @@ from asyncio import create_task, Task
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: float = 10) -> Task:
+def task_wait_random(max_delay: int) -> Task:
     """concurrency without async
 
     Args:
-        max_delay (float, optional): _description_. Defaults to 10.
+        max_delay (int): max_delay
 
     Returns:
-        Task: _description_
+        Task: Task Object
     """
     return create_task(wait_random(max_delay))
