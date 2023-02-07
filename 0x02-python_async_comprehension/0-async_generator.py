@@ -5,7 +5,7 @@ from asyncio import sleep
 from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator:
+async def async_generator() -> AsyncGenerator[float, None]:
     """intro to async_generator
 
     Returns:
