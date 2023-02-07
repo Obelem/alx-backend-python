@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """ Async Comprehensions """
 
 from asyncio import sleep
@@ -8,7 +7,11 @@ from typing import AsyncGenerator, Generator
 
 
 async def async_generator() -> Generator[float, None, None]:
-    """ Async Generator """
+    """first go at async generators
+
+    Yields:
+        Generator[float, None, None]: _description_
+    """
     for _ in range(10):
         await sleep(1)
         yield uniform(0, 10)
